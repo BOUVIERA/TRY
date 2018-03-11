@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prestige Cars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  <link href='style.css' rel='stylesheet'>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="icon" type="image/png" href="image/logo.png">
+
+<!--pour smooth scroll-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+      $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+          var page = $(this).attr('href'); // Page cible
+          var speed = 750; // Durée de l'animation (en ms)
+          $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+          return false;
+        });
+      });
+  </script>
+
+
+
+</head>
+
+<body>
+
+<div class="navbar">
+  <div class="menu">
+    <div class="logo">
+      <i class="fas fa-car logocar"></i>
+    </div>
+    <div class="nomentreprise">
+      Prestige Cars
+    </div>
+       <div class="optionsmenu">
+          <li><a href="#banner" class="liens js-scrollTo hidden-sm hidden-xs">Accueil</a></li>
+          <li><a href="#choix" class="liens js-scrollTo hidden-sm hidden-xs">Nos voitures</a></li>
+          <li><a href="#info" class="liens js-scrollTo hidden-sm hidden-xs">Demande d'informations</a></li>
+        <!-- drop down menu -->
+          <div class="menumobile navbar-item hidden-md hidden-lg">
+            <div class="dropdown hidden-md hidden-lg">
+              <svg class="svg-inline--fa fa-bars fa-w-14 dropdown-toggle hamburger" data-toggle="dropdown" aria-expanded="false" aria-hidden="true" data-prefix="fa" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+              <ul class="dropdown-menu dropdown-menu-left navbar-dropdown-menu listederoulante">
+                <li><a href="#banner" class="js-scrollTo">Accueil</a></li>
+                <li><a href="#choix" class="js-scrollTo">Nos voitures</a></li>
+                <li><a href="#info" class="js-scrollTo">Demande d'informations</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div id="banner" style="background-image: url(https://images.unsplash.com/photo-1476067897447-d0c5df27b5df?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a7c6744dc3a6d90547fef7af7adf0ad9&auto=format&fit=crop&w=1050&q=80);">
+    <h1> Prestige Cars </h1>
+    <h2> Réservez votre voiture pour un moment d’exception </h2>
+    <p> Vous désiriez louer une Rolls-Roys, une Mercedes, une ferrari, une vieille bentley ? Pour une journée, un week-end ou une plus longue durée ? Prestige Cars  saura répondre à toutes vos exigences. Que ce soit pour votre plaisir personnel, pour un déplacement d'affaire ou pour un événement (mariage, anniversaire, shooting photo, publicité, film ou clip-vidéo…), nous mettons à votre disposition notre savoir-faire et nos véhicules les plus prestigieux. </p>
+<br>
+    <ul id="top">
+      <li id="liste">
+        <a href="#choix" class="btn btn-primary btn-lg button-blue js-scrollTo"> Choisissez votre voiture </a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h1 id="choix">
+      Choisissez votre voiture
+      <small>
+        <a href="#top"></a>
+      </small>
+    </h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card">
+            <h2>Limousine </h2>
+            <p> Choisissez une voiture à votre image</p>
+            <img src="Images/Rolls.jpg">
+            <a href="car1.html" class="btn btn-danger">Réservez</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card">
+            <h2>4 X 4</h2>
+            <p> Choisissez une voiture à votre image </p>
+            <img src="Images/bentayga.jpg">
+            <a href="car2.html" class="btn btn-danger">Réservez</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card">
+            <h2> Vintage </h2>
+            <p> Choisissez une voiture à votre image </p>
+            <img src="Images/SL.jpg">
+            <a href="car3.html" class="btn btn-danger">Réservez</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card">
+            <h2> Sportive </h2>
+            <p> Choisissez une voiture à votre image </p>
+            <img src="Images/812.jpg">
+            <a href="car4.html" class="btn btn-danger">Réservez</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-blue section" id="info" style="background-image: url(https://images.unsplash.com/photo-1488998427799-e3362cec87c3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e8b82dbd7fe9677e9218686a427ea6d7&auto=format&fit=crop&w=1050&q=80)">
+
+
+
+
+      <!-- Begin MailChimp Signup Form -->
+<div class="formulaire">
+<div id="mc_embed_signup">
+<form action="https://facebook.us12.list-manage.com/subscribe/post?u=f201c480ac1292c1f2d887100&amp;id=0ebd17e15a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+  <h2>Etre informé de nos nouveaux véhicules de prestiges à la location</h2>
+
+<div class="mc-field-group email">
+  <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+  <label for="mce-FNAME">First Name </label>
+  <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+  <label for="mce-LNAME">Last Name </label>
+  <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+</div>  <div id="mce-responses" class="clear">
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f201c480ac1292c1f2d887100_0ebd17e15a" tabindex="-1" value=""></div>
+    <br>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+</div>
+<!--End mc_embed_signup-->
+  </div>
+  <div id="footer">
+      <ul class="list-inline">
+        <li><a href="https://www.facebook.com"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://youtube.com"><i class="fab fa-github-square"></i></a></li>
+        <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+      <p>Tous droits réservés, Prestige Cars est une entreprise fictive créée dans le cadre des cours de Coding Skills à Kedge BS ©Prestige Cars</p>
+  </div>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+
+
+</html>

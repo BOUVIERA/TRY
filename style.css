@@ -1,0 +1,277 @@
+
+/* dropdown menu */
+
+.hamburger{
+  font-size: 30px;
+}
+
+.hamburger:hover{
+  color: red;
+}
+
+.listederoulante {
+    right: auto;
+    left: -176px;
+}
+
+.open>.dropdown-menu {
+    display: block;
+}
+
+/* options de la navbar (logo + liens) */
+
+.nomentreprise{
+   font-family: 'Raleway', sans-serif;
+   font-weight: bold;
+   font-size: 25px;
+   color: white;
+   float: left;
+   line-height: 80px;
+
+}
+
+.logocar{
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.logo{
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: red; /*couleur fond logo */
+  float: left;
+
+}
+
+
+.navbar{
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  opacity: 0.9;
+  z-index: 1;
+
+}
+.optionsmenu{
+
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  list-style-type: none;
+  padding-top: 20px;
+  float: right;
+  padding-right: 20px;
+  line-height: 38px;
+}
+
+a{
+  color: white;
+}
+
+.liens{
+  padding-right: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transform-style: none;
+  outline-style: none;
+}
+
+.liens:hover{
+
+  text-decoration: none;
+  color: red;
+}
+
+/* general css */
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  color: rgb(255,255,255) ;
+  background-color: rgb(46, 61, 77);
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: rgb(255,255,255);
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  color:rgb(46, 61, 77);
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+p {
+  color:rgb(46, 61, 77);
+  font-size: 10px;
+}
+
+
+.card{
+  margin-bottom: 10px;
+  padding: 10px;
+
+}
+
+.btn{
+
+  }
+
+.btn-danger{
+
+}
+
+img {
+  height: 100px;
+  position: center
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#choix{
+
+}
+
+
+/* buttons css */
+
+.button-blue {
+  background-color: #01A1FD;
+}
+
+.button-blue:hover {
+  background-color: #e84089;
+}
+
+.button-pink {
+  background-color: #e84089;
+}
+
+.button-pink:hover {
+  background-color: white;
+  color: #e84089;
+}
+
+
+
+/* banner css */
+
+#banner{
+  text-align: center;
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.6)),url("images/background.jpeg");
+  background-size: cover;
+  padding: 150px;
+
+}
+
+#banner h1, #banner h2 {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  margin-bottom: 10px;
+}
+
+#banner h1 {
+  font-size: 50px;
+
+
+}
+
+#banner h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#banner p {
+  color: white;
+  opacity: 0.8;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+
+
+/* card css*/
+
+.card{
+  margin: 20px 0;
+  font-weight: lighter;
+  padding: 30px;
+  background: white;
+  border-radius: 3px;
+}
+
+
+#info{
+
+}
+
+/* section css*/
+
+.section {
+  padding: 50px;
+}
+
+.section h1, .section h3 {
+  margin-bottom: 50px;
+}
+
+.section-blue {
+  background-size: 100% auto;
+
+}
+
+.clear{
+  margin-left: 70px;
+}
+
+.email{
+  margin-right: 16px;
+}
+
+.formulaire{
+
+  color: black;
+
+}
+
+
+/* footer css*/
+
+#footer{
+  padding: 30px;
+  background: rgb(30, 30, 30);
+  color: grey;
+}
+
+#footer a {
+  color: lightgrey;
+  font-size: 40px;
+}
+
+#footer a:hover {
+  color: white;
+}
+
+#liste{
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
